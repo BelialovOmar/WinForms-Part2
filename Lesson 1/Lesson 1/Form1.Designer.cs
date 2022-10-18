@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.ButtonMSGLink = new System.Windows.Forms.LinkLabel();
+            this.buttonClickPractice = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // ButtonMSGLink
@@ -42,12 +43,24 @@
             this.ButtonMSGLink.Text = "Button MSG Box";
             this.ButtonMSGLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.ButtonMSGLink_LinkClicked);
             // 
+            // buttonClickPractice
+            // 
+            this.buttonClickPractice.AutoSize = true;
+            this.buttonClickPractice.Location = new System.Drawing.Point(12, 29);
+            this.buttonClickPractice.Name = "buttonClickPractice";
+            this.buttonClickPractice.Size = new System.Drawing.Size(136, 20);
+            this.buttonClickPractice.TabIndex = 1;
+            this.buttonClickPractice.TabStop = true;
+            this.buttonClickPractice.Text = "Practice1 - BtnClick";
+            this.buttonClickPractice.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.buttonClickPractice_LinkClicked);
+            // 
             // PortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonClickPractice);
             this.Controls.Add(this.ButtonMSGLink);
             this.Name = "PortalForm";
             this.Text = "Portal Form";
@@ -59,5 +72,6 @@
         #endregion
 
         private LinkLabel ButtonMSGLink;
+        private LinkLabel buttonClickPractice;
     }
 }

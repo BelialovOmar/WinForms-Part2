@@ -11,5 +11,10 @@ namespace Lesson_1
         {
             new ButtonMSGBox().ShowDialog();
         }
+
+        private void buttonClickPractice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new ButtonClickPractice().ShowDialog();
+        }
     }
 }
