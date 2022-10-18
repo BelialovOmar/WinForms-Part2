@@ -19,6 +19,7 @@ namespace Lesson_1
 
         int cnt = 0;
 
+        // кнопка считает количество кликов по ней
         private void btnClickCounter_Click(object sender, EventArgs e)
         {
             Button b = sender as Button;
