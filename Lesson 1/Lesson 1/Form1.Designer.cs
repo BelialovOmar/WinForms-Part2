@@ -30,6 +30,8 @@
         {
             this.ButtonMSGLink = new System.Windows.Forms.LinkLabel();
             this.buttonClickPractice = new System.Windows.Forms.LinkLabel();
+            this.MouseEvent = new System.Windows.Forms.LinkLabel();
+            this.runningAwayBtn = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // ButtonMSGLink
@@ -54,12 +56,36 @@
             this.buttonClickPractice.Text = "Practice1 - BtnClick";
             this.buttonClickPractice.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.buttonClickPractice_LinkClicked);
             // 
+            // MouseEvent
+            // 
+            this.MouseEvent.AutoSize = true;
+            this.MouseEvent.Location = new System.Drawing.Point(12, 49);
+            this.MouseEvent.Name = "MouseEvent";
+            this.MouseEvent.Size = new System.Drawing.Size(135, 20);
+            this.MouseEvent.TabIndex = 2;
+            this.MouseEvent.TabStop = true;
+            this.MouseEvent.Text = "Mouse Leave/Enter";
+            this.MouseEvent.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.MouseEvent_LinkClicked);
+            // 
+            // runningAwayBtn
+            // 
+            this.runningAwayBtn.AutoSize = true;
+            this.runningAwayBtn.Location = new System.Drawing.Point(12, 69);
+            this.runningAwayBtn.Name = "runningAwayBtn";
+            this.runningAwayBtn.Size = new System.Drawing.Size(225, 20);
+            this.runningAwayBtn.TabIndex = 3;
+            this.runningAwayBtn.TabStop = true;
+            this.runningAwayBtn.Text = "Practice2 - Running Away Button";
+            this.runningAwayBtn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.runningAwayBtn_LinkClicked);
+            // 
             // PortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.runningAwayBtn);
+            this.Controls.Add(this.MouseEvent);
             this.Controls.Add(this.buttonClickPractice);
             this.Controls.Add(this.ButtonMSGLink);
             this.Name = "PortalForm";
@@ -73,5 +99,7 @@
 
         private LinkLabel ButtonMSGLink;
         private LinkLabel buttonClickPractice;
+        private LinkLabel MouseEvent;
+        private LinkLabel runningAwayBtn;
     }
 }

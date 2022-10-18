@@ -16,5 +16,15 @@ namespace Lesson_1
         {
             new ButtonClickPractice().ShowDialog();
         }
+
+        private void MouseEvent_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new MouseEventEnterLeave().ShowDialog();
+        }
+
+        private void runningAwayBtn_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new RunningAwayButton().ShowDialog();
+        }
     }
 }
