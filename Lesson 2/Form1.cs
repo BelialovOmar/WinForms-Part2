@@ -16,5 +16,10 @@ namespace Lesson_2
         {
             new MovingWindowPractice().ShowDialog();
         }
+
+        private void timerPractice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new TimerPractice().ShowDialog();
+        }
     }
 }
