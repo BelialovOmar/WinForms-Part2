@@ -26,5 +26,10 @@ namespace Lesson_1
         {
             new RunningAwayButton().ShowDialog();
         }
+
+        private void drawingButtonsPractice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new DrawingButtons().ShowDialog();
+        }
     }
 }

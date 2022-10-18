@@ -32,6 +32,7 @@
             this.buttonClickPractice = new System.Windows.Forms.LinkLabel();
             this.MouseEvent = new System.Windows.Forms.LinkLabel();
             this.runningAwayBtn = new System.Windows.Forms.LinkLabel();
+            this.drawingButtonsPractice = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // ButtonMSGLink
@@ -78,12 +79,24 @@
             this.runningAwayBtn.Text = "Practice2 - Running Away Button";
             this.runningAwayBtn.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.runningAwayBtn_LinkClicked);
             // 
+            // drawingButtonsPractice
+            // 
+            this.drawingButtonsPractice.AutoSize = true;
+            this.drawingButtonsPractice.Location = new System.Drawing.Point(12, 89);
+            this.drawingButtonsPractice.Name = "drawingButtonsPractice";
+            this.drawingButtonsPractice.Size = new System.Drawing.Size(193, 20);
+            this.drawingButtonsPractice.TabIndex = 4;
+            this.drawingButtonsPractice.TabStop = true;
+            this.drawingButtonsPractice.Text = "Practice3 - Drawing Buttons";
+            this.drawingButtonsPractice.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.drawingButtonsPractice_LinkClicked);
+            // 
             // PortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.drawingButtonsPractice);
             this.Controls.Add(this.runningAwayBtn);
             this.Controls.Add(this.MouseEvent);
             this.Controls.Add(this.buttonClickPractice);
@@ -101,5 +114,6 @@
         private LinkLabel buttonClickPractice;
         private LinkLabel MouseEvent;
         private LinkLabel runningAwayBtn;
+        private LinkLabel drawingButtonsPractice;
     }
 }
