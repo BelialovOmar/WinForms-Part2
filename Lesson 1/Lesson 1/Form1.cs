@@ -31,5 +31,10 @@ namespace Lesson_1
         {
             new DrawingButtons().ShowDialog();
         }
+
+        private void KeyBoardExample_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new KeyBoardExample().ShowDialog();
+        }
     }
 }

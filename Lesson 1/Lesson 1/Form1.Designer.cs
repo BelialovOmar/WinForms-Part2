@@ -33,6 +33,7 @@
             this.MouseEvent = new System.Windows.Forms.LinkLabel();
             this.runningAwayBtn = new System.Windows.Forms.LinkLabel();
             this.drawingButtonsPractice = new System.Windows.Forms.LinkLabel();
+            this.KeyBoardExample = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // ButtonMSGLink
@@ -90,12 +91,24 @@
             this.drawingButtonsPractice.Text = "Practice3 - Drawing Buttons";
             this.drawingButtonsPractice.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.drawingButtonsPractice_LinkClicked);
             // 
+            // KeyBoardExample
+            // 
+            this.KeyBoardExample.AutoSize = true;
+            this.KeyBoardExample.Location = new System.Drawing.Point(12, 109);
+            this.KeyBoardExample.Name = "KeyBoardExample";
+            this.KeyBoardExample.Size = new System.Drawing.Size(73, 20);
+            this.KeyBoardExample.TabIndex = 5;
+            this.KeyBoardExample.TabStop = true;
+            this.KeyBoardExample.Text = "KeyBoard";
+            this.KeyBoardExample.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.KeyBoardExample_LinkClicked);
+            // 
             // PortalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.KeyBoardExample);
             this.Controls.Add(this.drawingButtonsPractice);
             this.Controls.Add(this.runningAwayBtn);
             this.Controls.Add(this.MouseEvent);
@@ -115,5 +128,6 @@
         private LinkLabel MouseEvent;
         private LinkLabel runningAwayBtn;
         private LinkLabel drawingButtonsPractice;
+        private LinkLabel KeyBoardExample;
     }
 }
