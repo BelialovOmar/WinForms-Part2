@@ -11,5 +11,10 @@ namespace Lesson_3
         {
             new statusStrip_practice().ShowDialog();
         }
+
+        private void hwWallpaper_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new Wallpaper_HW().ShowDialog();
+        }
     }
 }
