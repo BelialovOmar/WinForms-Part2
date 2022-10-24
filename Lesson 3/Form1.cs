@@ -7,9 +7,9 @@ namespace Lesson_3
             InitializeComponent();
         }
 
-        private void statusStrip_practice_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void statusStripPractire_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            new Status_Strip_practice().ShowDialog();
+            new statusStrip_practice().ShowDialog();
         }
     }
 }

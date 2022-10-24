@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.statusStrip_practice = new System.Windows.Forms.LinkLabel();
+            this.statusStripPractire = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // statusStrip_practice
+            // statusStripPractire
             // 
-            this.statusStrip_practice.AutoSize = true;
-            this.statusStrip_practice.Location = new System.Drawing.Point(12, 9);
-            this.statusStrip_practice.Name = "statusStrip_practice";
-            this.statusStrip_practice.Size = new System.Drawing.Size(158, 20);
-            this.statusStrip_practice.TabIndex = 0;
-            this.statusStrip_practice.TabStop = true;
-            this.statusStrip_practice.Text = "Practice1 - Status Strip";
-            this.statusStrip_practice.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.statusStrip_practice_LinkClicked);
+            this.statusStripPractire.AccessibleRole = System.Windows.Forms.AccessibleRole.MenuBar;
+            this.statusStripPractire.AutoSize = true;
+            this.statusStripPractire.Location = new System.Drawing.Point(12, 9);
+            this.statusStripPractire.Name = "statusStripPractire";
+            this.statusStripPractire.Size = new System.Drawing.Size(158, 20);
+            this.statusStripPractire.TabIndex = 0;
+            this.statusStripPractire.TabStop = true;
+            this.statusStripPractire.Text = "Practice1 - Status Strip";
+            this.statusStripPractire.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.statusStripPractire_LinkClicked);
             // 
             // Form1
             // 
@@ -48,7 +49,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.statusStrip_practice);
+            this.Controls.Add(this.statusStripPractire);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -58,6 +59,6 @@
 
         #endregion
 
-        private LinkLabel statusStrip_practice;
+        private LinkLabel statusStripPractire;
     }
 }

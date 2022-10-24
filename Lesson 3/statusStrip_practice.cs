@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Lesson_3
 {
-    public partial class Status_Strip_practice : Form
+    public partial class statusStrip_practice : Form
     {
-        public Status_Strip_practice()
+        public statusStrip_practice()
         {
             InitializeComponent();
         }
 
-        int  cnt;  // счетчик кликов
-         
-        private void button1_Demo_MouseDown(object sender, MouseEventArgs e)
+        int cnt;  // счетчик кликов
+
+        private void button1_MouseDown(object sender, MouseEventArgs e)
         {
             cnt++;
             toolStripStatusLabel1.Text = $"clicked {cnt} times";
