@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.statusStripPractire = new System.Windows.Forms.LinkLabel();
-            this.hwWallpaper = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // statusStripPractire
@@ -44,16 +44,16 @@
             this.statusStripPractire.Text = "Practice1 - Status Strip";
             this.statusStripPractire.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.statusStripPractire_LinkClicked);
             // 
-            // hwWallpaper
+            // linkLabel1
             // 
-            this.hwWallpaper.AutoSize = true;
-            this.hwWallpaper.Location = new System.Drawing.Point(12, 29);
-            this.hwWallpaper.Name = "hwWallpaper";
-            this.hwWallpaper.Size = new System.Drawing.Size(116, 20);
-            this.hwWallpaper.TabIndex = 1;
-            this.hwWallpaper.TabStop = true;
-            this.hwWallpaper.Text = "HW - Wallpaper";
-            this.hwWallpaper.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.hwWallpaper_LinkClicked);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(12, 29);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(28, 20);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "res";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Form1
             // 
@@ -61,7 +61,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.hwWallpaper);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.statusStripPractire);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -73,6 +73,6 @@
         #endregion
 
         private LinkLabel statusStripPractire;
-        private LinkLabel hwWallpaper;
+        private LinkLabel linkLabel1;
     }
 }
