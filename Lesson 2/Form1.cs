@@ -21,5 +21,10 @@ namespace Lesson_2
         {
             new TimerPractice().ShowDialog();
         }
+
+        private void buttonsArray_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new ButtonArray().ShowDialog();
+        }
     }
 }
