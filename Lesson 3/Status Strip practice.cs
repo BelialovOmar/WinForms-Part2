@@ -17,7 +17,7 @@ namespace Lesson_3
             InitializeComponent();
         }
 
-        int  cnt;           // счетчик кликов
+        int  cnt;  // счетчик кликов
          
         private void button1_Demo_MouseDown(object sender, MouseEventArgs e)
         {
