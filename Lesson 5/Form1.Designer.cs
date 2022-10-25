@@ -31,6 +31,7 @@
             this.linkLabel_practirRichTextBox = new System.Windows.Forms.LinkLabel();
             this.linkLabel1_screen = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel_practirRichTextBox
@@ -66,11 +67,23 @@
             this.linkLabel1.Text = "Change WallPaper";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(12, 69);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(42, 20);
+            this.linkLabel2.TabIndex = 3;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Time";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.linkLabel1_screen);
             this.Controls.Add(this.linkLabel_practirRichTextBox);
@@ -86,5 +99,6 @@
         private LinkLabel linkLabel_practirRichTextBox;
         private LinkLabel linkLabel1_screen;
         private LinkLabel linkLabel1;
+        private LinkLabel linkLabel2;
     }
 }

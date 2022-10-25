@@ -21,5 +21,10 @@ namespace Lesson_5
         {
             new ChangeWallPaper().Show();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new TimeInfo().Show();
+        }
     }
 }
