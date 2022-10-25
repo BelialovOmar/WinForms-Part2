@@ -24,12 +24,12 @@ namespace Lesson_5
         {
             InitializeComponent();
             timer1.Start();
-            wallpapeers = = Directory.GetFiles("E:\\Рабочий стол\\photo")
+            wallpapers = Directory.GetFiles("E:\\Рабочий стол\\photo");
+            timer1.Interval = 4000;
         }
         private void SetWallpaper(string WallpaperLocation, int WallpaperStyle, int TileWallpaper)
         {
-            WallpaperLocation = wallpapeers[];
-            // Sets the actual wallpaper
+             // Sets the actual wallpaper
             SystemParametersInfo(20, 0, WallpaperLocation, 0x01 | 0x02);
             // Set the wallpaper style to streched (can be changed to tile, center, maintain aspect ratio, etc.
             RegistryKey rkWallPaper = Registry.CurrentUser.OpenSubKey("Control Panel\\Desktop", true);
@@ -47,7 +47,7 @@ namespace Lesson_5
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            SetWallpaper(wallpapers[rnd.Next(2)], 2,0);
+            SetWallpaper(wallpapers[rnd.Next(3)], 2,0);
         }
     }
 }
