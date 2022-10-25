@@ -36,8 +36,7 @@
         <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" x:Name="TextOccupation" MinWidth="150" Grid.Row="2" Grid.Column="1">Student</TextBox>
 
         <Label Content="Skills" Grid.Row="3" Grid.Column="0"></Label>
-        <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" x:Name="TextSkills" MinWidth="150" Grid.Row="3" Grid.Column="1">Push button right
-        </TextBox>
+        <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" x:Name="TextSkills" MinWidth="150" Grid.Row="3" Grid.Column="1">C++, C#, WinForms, MySQL</TextBox>
 
         <Label Content="Languages" Grid.Row="4" Grid.Column="0"></Label>
         <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" x:Name="TextLanguages" MinWidth="150" Grid.Row="4" Grid.Column="1">Ukrainian, English, Russian</TextBox>
