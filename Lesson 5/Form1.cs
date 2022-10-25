@@ -11,5 +11,10 @@ namespace Lesson_5
         {
             new RichTextBox_Practice().Show();
         }
+
+        private void linkLabel1_screen_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new ScreenShot().Show();
+        }
     }
 }

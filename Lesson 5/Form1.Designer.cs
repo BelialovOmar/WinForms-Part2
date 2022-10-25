@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.linkLabel_practirRichTextBox = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1_screen = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // linkLabel_practirRichTextBox
@@ -42,11 +43,23 @@
             this.linkLabel_practirRichTextBox.Text = "richTextBox";
             this.linkLabel_practirRichTextBox.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_practirRichTextBox_LinkClicked);
             // 
+            // linkLabel1_screen
+            // 
+            this.linkLabel1_screen.AutoSize = true;
+            this.linkLabel1_screen.Location = new System.Drawing.Point(12, 29);
+            this.linkLabel1_screen.Name = "linkLabel1_screen";
+            this.linkLabel1_screen.Size = new System.Drawing.Size(81, 20);
+            this.linkLabel1_screen.TabIndex = 1;
+            this.linkLabel1_screen.TabStop = true;
+            this.linkLabel1_screen.Text = "Screenshot";
+            this.linkLabel1_screen.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_screen_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.linkLabel1_screen);
             this.Controls.Add(this.linkLabel_practirRichTextBox);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -58,5 +71,6 @@
         #endregion
 
         private LinkLabel linkLabel_practirRichTextBox;
+        private LinkLabel linkLabel1_screen;
     }
 }

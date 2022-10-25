@@ -1,6 +1,6 @@
-﻿namespace Lesson_4
+﻿namespace Lesson_5
 {
-    partial class ParentForm
+    partial class ScreenShot
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox_Demo1 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // textBox_Demo1
+            // timer1
             // 
-            this.textBox_Demo1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_Demo1.Location = new System.Drawing.Point(12, 12);
-            this.textBox_Demo1.Multiline = true;
-            this.textBox_Demo1.Name = "textBox_Demo1";
-            this.textBox_Demo1.Size = new System.Drawing.Size(445, 368);
-            this.textBox_Demo1.TabIndex = 0;
-             // 
-            // ParentForm
+            this.timer1.Interval = 5000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // ScreenShot
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(469, 392);
-            this.Controls.Add(this.textBox_Demo1);
-            this.Name = "ParentForm";
-            this.Text = "ParentForm";
-             this.ResumeLayout(false);
-            this.PerformLayout();
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "ScreenShot";
+            this.Text = "ScreenShot";
+            this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private TextBox textBox_Demo1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
