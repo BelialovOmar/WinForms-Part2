@@ -38,7 +38,9 @@ namespace Lesson_5
             var time = DateTime.Now;
             String name = time.Year + "." + time.Month + "." + time.Day + "-" + time.Hour + "." + time.Minute + "." + time.Second + ".png";
             bmpScreenshot.Save(name, ImageFormat.Png);
+
             // Show the form again
+
             this.Show();
         }
         private void timer1_Tick(object sender, EventArgs e)
